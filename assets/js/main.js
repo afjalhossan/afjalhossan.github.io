@@ -3,117 +3,114 @@
 
     jQuery(document).ready(function($){
 
+        $(".case-study-carousel").owlCarousel({
+            loop:true,
+            dots:true,
+            nav:false,
+            margin:30,
+            responsive : {
+                    // breakpoint from 0 up
+                    0 : {
+                        items:1,
+                    },
+                    // breakpoint from 768 up
+                    768 : {
+                        items:2,
+                    },
+                    // breakpoint from 768 up
+                    992 : {
+                        items:3,
+                    }
+            }
+        });
+        $(".testimonial-slide").owlCarousel({
+            items:1,
+            loop:true,
+            dots:true,
+            nav:false,
+        });
+        $(".logo-carousel").owlCarousel({
+            items:6,
+            loop:true,
+            dots:false,
+            nav:false,
+            responsive : {
+                    // breakpoint from 0 up
+                    0 : {
+                        items:2,
+                    },
+                    // breakpoint from 768 up
+                    768 : {
+                        items:4,
+                    },
+                    // breakpoint from 768 up
+                    992 : {
+                        items:6,
+                    }
+            }            
+        });
+        $(".testimonial-carousel-home-2").owlCarousel({
+            items:1,
+            loop:true,
+            dots:false,
+            nav:false,
+            autoplay:true,
+        });
+        $(".homepage3-slide").owlCarousel({
+            items:1,
+            loop:true,
+            dots:false,
+            nav:true,
+            navText:["<i class='zmdi zmdi-arrow-right'>","<i class='zmdi zmdi-arrow-left'>"],
+            autoplay:false,
+        });
+        
+        $(".boxed-layout").on('click',function(){
+            $("body").addClass("boxed-layout").removeClass("wide-layout");
+            $(".layout-changer span").removeClass("active");
+            $(this).addClass('active');
+        });
 
-        $(".embed-responsive iframe").addClass("embed-responsive-item");
-        $(".carousel-inner .item:first-child").addClass("active");
-        
-        $('[data-toggle="tooltip"]').tooltip();
-
-        
-    $(".portfolio-items").isotope();
-        
-    $(".item-filter ul li").on('click', function(){
-            $(".item-filter ul li").removeClass("active");
+        $(".wide-layout").on('click',function(){
+            $("body").addClass("wide-layout").removeClass("boxed-layout");
+            $(".layout-changer span").removeClass("active");
             $(this).addClass("active");
-            
-            var selector=$(this).attr('data-filter');
-            $(".portfolio-items").isotope({
-                filter:selector
-            })
+        });
+        $(".menu-trigger").on('click',function(){
+            $(".offcanvas-menu").addClass("show-offcanvas");
+            $(".offcanvas-menu-shadow").addClass("active");
+        });
+        $(".menu-close,.offcanvas-menu-shadow").on('click',function(){
+            $(".offcanvas-menu").removeClass("show-offcanvas");
+            $(".offcanvas-menu-shadow").removeClass("active");
         });
         
-     $('.progress .progress-bar').appear(function(){
-             
-            $('.progress .progress-bar').progressbar();
-        }); 
-        
-     var scrl =$("#scrollTop")
-
-
-       $(window).on('scroll',function(){
-           if($(this).scrollTop() >300){
-               scrl.fadeIn();
-           }else{
-               scrl.fadeOut();
-           }
-       });''
-       scrl.on('click',function(){
-           $('body,html').animate({
-               scrollTop :0
-           },1500)
-       });
-
-
-  
-
-       // Milestone counter
-    
-    jQuery('.counter').counterUp({
-        delay: 10,
-        time: 3000
-    });
-    
-    $("#reviews-slider").owlCarousel({
-        items : 2,
-        itemsDesktop : [1199,2],
-        itemsDesktopSmall : [979,2],
-        itemsTablet: [600,1],
-        itemsMobile : [479,1],
-        slideSpeed : 800,
-        loop       :true,
-        mouseDrag: false,
-        pagination : false,
-        navigation: true,
-            navText: [
-            "<span class='ti-angle-left'></span>",
-            "<span class='ti-angle-right'></span>"
-            ],        
-        autoPlay : false,    
-    });
-    
-     // Brand slider
-
-    jQuery("#brand-slider").owlCarousel({
-        items : 3,
-        loop:true,
-        itemsDesktop : [1199,3],
-        itemsDesktopSmall : [979,3],
-        itemsTablet: [600,2],
-        itemsMobile : [479,1],
-        slideSpeed : 400,
-        mouseDrag: false,
-        pagination : false,       
-        autoplay : true,
-        autoPlaySpeed: 5000,
-        autoPlayTimeout: 5000,
-        autoplayHoverPause: true, 
-        
-    });
-    
-    // Sticky Navigation
-
-    jQuery(function() {
-        $('#navigation').height($("#nav").height());
-          $('#nav').affix({
-            offset: { top: $('#nav').offset().top -15 }
+        $(".search-trigger").on('click',function(){
+            $(".search-bar-wrap").addClass("active");
         });
+        $(".search-close").on('click',function(){
+         $(".search-bar-wrap").removeClass("active");
+        });
+        
+        $(".single-testimonial-box").hover(function(){
+            $(".single-testimonial-box").removeClass("active");
+            $(this).addClass('active');
+        })
+        $(".play-btn,.video-play-btn").magnificPopup({
+            type:'video'
+        });
+        $(".traffic-menu").slicknav({
+            prependTo:"#mobile-menu-wrap"
+        });
+        
+
     });
-        
-    new WOW().init();
-        
-     // jQuery smooth scroll
-        $('.page-scroll').bind('click', function(event) {
-            var $anchor = $(this);
-            var headerH = '70';
-            $('html, body').stop().animate({
-                scrollTop : $($anchor.attr('href')).offset().top - headerH + "px"
-            }, 1200, 'easeInOutExpo');
 
-            event.preventDefault();
-        }); 
 
-   });   
-   
+    jQuery(window).load(function(){
+
+        
+    });
 
 
 }(jQuery));	

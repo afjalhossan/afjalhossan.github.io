@@ -1,0 +1,18 @@
+
+
+.mainmenu li:hover li:hover a,.bordered-btn, input[type="submit"], button[type="submit"],.case-study-wrap,.owl-dots div.active,.single-testimonial-box.active
+ .testimonil-content{
+    background:#3498db;
+}
+
+.single-price-box:hover .price-value,.single-service-box:hover .icon-box, .single-service-box:hover a.service-read-more-btn, .single-service-box:hover .icon-module-content h5 ,.mainmenu li >a:hover ,.mainmenu li:hover li:hover a,.price-value{
+    color: #3498db
+}
+
+.single-price-box:hover, .price-heading, .single-price-box:hover, .single-service-box:hover{
+    border-color: #3498db;
+}
+
+.testimonil-content:after{
+    border-color: transparent #3498db transparent transparent;
+}

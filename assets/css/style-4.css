@@ -1,0 +1,102 @@
+
+
+.slider-wrapper h2 {
+    color: #fff;
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 55px;
+    margin-bottom: 30px;
+}
+
+.slider-wrapper p {
+    font-weight: 300;
+    line-height: 28px;
+    margin-bottom: 45px;
+}
+
+.hero-form-wrapper input {
+    background: #083A4B;
+    border-color: #083A4B;
+}
+
+input.bordered-btn {
+    background: #00D5A0;
+    border-collapse:#00d5a0;
+}
+body {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 26px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-weight: 700;
+    line-height: 28px;
+}
+h3 {
+    font-size: 26px;
+}
+.social-links a {
+    margin: 0;
+}
+.social-links li:hover a {
+    COLOR: #00D5A0;
+}
+.social-links li {
+    margin-right: 10px;
+}
+.copyright-area {
+    background: #0E2D37;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.single-service-box:hover {
+    border-color: #00D5A0;
+}
+.single-service-box:hover .icon-box, .single-service-box:hover a.service-read-more-btn, .single-service-box:hover .icon-module-content h5 {
+    color: #00D5A0;
+}
+.single-service-box:hover .icon-box {
+    color: #00D5A0;
+}
+.bordered-btn {
+    padding: 10px 16px;
+}
+.single-price-box:hover {
+    border-color: #00D5A0;
+    margin-bottom: 0;
+}
+.price-value {
+    color:#00D5A0;
+}
+
+.single-price-box:hover .price-heading {
+     border-color:#00D5A0; 
+}
+.single-price-box {
+  margin-bottom:0;
+}
+.case-study-wrap{
+    background: #06d6a0
+}
+a.single-bolg-post {
+    margin: 15px 0;
+    min-height: 500px;
+}.owl-dots div.active {
+    background: #08D5A0 none repeat scroll 0 0;
+}
+.cta-area.theme-4:after, .breadcrumb-area:after {
+    opacity: .3;
+   
+}
+.theme-4.pricing-bg-btn{background-image: url(../img/background/pricing-bg-btn.jpg);}
+.theme-4.theme-4.faq-bg-btn{background-image: url(../img/background/faq-bg-btn.jpg);}
+
+.footer-area a:hover {
+    color: #26E51C;
+}
+
+.footer-area h4 {
+    color: #fff;
+}

@@ -1,0 +1,50 @@
+
+.header-area .mainmenu a {
+    color: #fff;
+}
+
+.header-area .mainmenu a:hover {
+    color: #06d6a0;
+}
+
+.owl-dots div.active {
+    background: #08D5A0 none repeat scroll 0 0;
+}
+
+.hero-form-wrapper {
+    margin-top: -50px;
+}
+
+
+.single-service-box:hover {
+    border-color: #08D5A0;
+}
+.single-service-box:hover .icon-box, .single-service-box:hover a.service-read-more-btn, .single-service-box:hover .icon-module-content h5 {
+    color:#08D5A0;
+}
+.case-study-wrap {
+    background-color: #06d6a0;
+}
+
+
+.blog-thumb-wrap{
+    min-height: 250px;
+    
+}
+
+.bordered-btn {
+    color: #000;
+    padding: 15px 20px;
+    margin-top: 5px;
+}
+
+.social-links a {
+    padding: 22px 0;
+    margin: 0 8px;
+    display: inline-block;
+.slicknav_menu {
+    background: transparent;
+}
+.footer-area-home-3 a:hover {
+    color: #333;
+}

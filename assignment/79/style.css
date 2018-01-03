@@ -1,0 +1,136 @@
+
+
+
+/* ==========================================================================
+   F O N T S----------
+   ========================================================================== */
+
+ @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,700,800');
+
+body{
+	font-family: 'Open Sans', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+
+.hero-area{background: url(img/4.jpg);}
+header {
+    height: 112px;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+
+ul.manubar {
+    MARGIN: 0;
+    padding:  0;
+    list-style:  none;
+}
+
+ul.manubar li {
+    display: inline-block;
+}
+
+ul.manubar li a {
+    display:  block;
+    font-size: 20px;
+    color: #333;
+    font-weight: 700;
+    padding: 45px 30px;
+    text-transform: capitalize;
+    letter-spacing: 1.5px;
+}
+
+.hero-area {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    z-index:  1;
+    height: 100vh;
+}
+
+.hero-area:after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: #000;
+    z-index:  -1;
+    opacity: .5;
+}
+
+.hero-area-cotent {
+    position: absolute;
+    top: 50%;
+    left:  50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 18px;
+}
+
+.hero-area-cotent h1 {
+    font-size:  52px;
+    font-weight: 400;
+    line-height: 1.8;
+}
+
+.mainchimp-form {
+    margin-top: 30px;
+}
+
+.mainchimp-form input {
+    padding: 20px 10px;
+    border-radius: 10px;
+    border: none;
+    color:#333;
+}
+
+.mainchimp-form  input[type="submit"] {
+    background: #EF4043;
+}
+
+.social-link {
+    margin: 0;
+    padding:  0;
+    list-style: none;
+    margin-top: 20px;
+}
+
+.social-link li {
+    display: inline-block;
+}
+
+.social-link li a {
+    display: block;
+    color: #f00;
+    padding: 15px;
+    background: #222;
+    border-radius: 5px;
+}
+
+footer.footer {
+    background: #ccc;
+    padding: 10px 0;
+}
+
+ul.footer-menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: right;
+}
+
+ul.footer-menu ul li {
+    display:  inline-block;
+}
+
+ul.footer-menu ul li a {
+    display: inline-block;
+    color: #333;
+    padding-left: 20px;
+    text-transform: capitalize;
+}

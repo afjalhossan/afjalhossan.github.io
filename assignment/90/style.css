@@ -1,0 +1,84 @@
+
+
+
+/* ==========================================================================
+   F O N T S----------
+   ========================================================================== */
+
+ @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,700,800');
+
+body{
+	font-family: 'Open Sans', sans-serif;
+}
+h2.sec-title {
+    text-align:  center;
+    text-transform:  capitalize;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+.section-padding {
+    padding: 50px 0;
+}
+
+.sec-img img {
+    max-width:  70%;
+    max-height: 252px;
+}
+
+.sec-img {
+    text-align:  right;
+    margin-top: 50px;
+}
+
+.sec-text {
+    border: 10px solid #eee;
+    min-height: 200px;
+    position: relative;
+    padding: 20px;
+    background: #fff;
+    margin-top: -100px;
+    max-width: 450px;
+}
+
+.social-link {}
+
+.social-link a {
+    display:  inline-block;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #efefef;
+    font-size: 15px;
+    color: #777;
+    text-align: center;
+    line-height: 22px;
+    margin: 3px 0;
+}
+
+.social-link {
+    width: 46px;
+    position: absolute;
+    right: -40px;
+    display:  table;
+    height: 100%;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.link-wrap {
+}
+
+.right-site .sec-img {
+    text-align: left;
+}
+
+.right-site .sec-text {
+    float: right;
+}
+
+.right-site .social-link {
+    right: auto;
+    left: -18px;
+}

@@ -1,0 +1,120 @@
+
+
+
+/* ==========================================================================
+   F O N T S----------
+   ========================================================================== */
+
+ @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,700,800');
+
+body{
+	font-family: 'Open Sans', sans-serif;
+}
+
+.featured-bg{
+    background: url(img/2.jpg);
+}.featured-bg-2{
+    background: url(img/3.jpg);
+}.featured-bg-3{
+    background: url(img/4.jpg);
+}
+
+
+.sec-padd {
+    padding: 80px 0;
+}
+
+.single-featured-project {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.featured-text {
+    width: 60%;
+    float: right;
+    background: #fe9333;
+    color: #fff;
+    padding-left: 260px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    margin-top: 200px;
+    line-height: 2;
+    font-size: 18px;
+}
+
+.featured-bg {
+    position: absolute;
+    height: 90%;
+    width: 60%;
+    background-size: cover;
+    background-position: center;
+    border: 15px solid #fff;
+    margin-left: -15px;
+}
+
+.featured-text h3 {
+    color: #222;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+p.more-link {
+    margin-top: 30px;
+}
+
+p.more-link a {
+    color: #fff;
+    letter-spacing: 1.5px;
+}
+
+.featured-projects-wrap {
+    position: relative;
+}
+
+.sec-title {
+    position:  absolute;
+    width: 40%;
+    right: 0;
+    color: #D9D9D9;
+    top: 6%;
+}
+
+h2.sec-title span {
+    color: #222;
+    font-size: 38px;
+}
+
+.featured-projects .owl-dots div:nth-child(1):before {
+    content: "01";
+}
+
+.featured-projects .owl-dots div:nth-child(2):before {
+    content: "02";
+}
+
+.featured-projects .owl-dots div:nth-child(3):before {
+    content: "03";
+}
+
+.featured-projects .owl-dots div:nth-child(4):before {
+    content: "04";
+}
+
+.featured-projects .owl-dots div {
+    display:  inline-block;
+    font-size: 40px;
+    margin-right: 15px;
+    opacity: .5;
+}
+
+.featured-projects .owl-dots {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.featured-projects .owl-dots div.active {
+    color: #FD9235;
+    opacity: 1;
+}

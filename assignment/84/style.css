@@ -1,0 +1,99 @@
+
+
+
+/* ==========================================================================
+   F O N T S----------
+   ========================================================================== */
+
+ @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,700,800');
+
+body{
+	font-family: 'Open Sans', sans-serif;
+}
+.flip-area {
+    padding: 100px;
+    background-color: #efefef;
+}
+ .flipped-boxed-service {
+    height: 100%;
+    display: table;
+    background-color: #fff;
+    width: 100%;
+    border-bottom: 5px solid #000;
+}
+.back .flipped-boxed-service{
+	background-color: #000;
+	color: #fff;
+	border-color: #fff;
+}
+.boxed-cell {
+      text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.boxed-cell i.fa {
+    font-size: 100px;
+    margin-bottom: 20px;
+}
+
+.boxed-cell h3 {
+    font-size: 25px;
+}
+.flipboxed {
+	margin: 0 auto;
+	height: 250px;  
+	position: relative;
+	-webkit-perspective: 600px;
+	-moz-perspective: 600px;
+}
+
+	
+.flipboxed .front {
+	height: inherit;
+	position: absolute;
+	top: 0;
+	z-index: 900;
+	text-align: center;
+	-webkit-transform: rotateX(0deg) rotateY(0deg);
+	   -moz-transform: rotateX(0deg) rotateY(0deg);
+	-webkit-transform-style: preserve-3d;
+	   -moz-transform-style: preserve-3d;
+	-webkit-backface-visibility: hidden;
+	   -moz-backface-visibility: hidden;
+	-webkit-transition: all .4s ease-in-out;
+	   -moz-transition: all .4s ease-in-out;
+		-ms-transition: all .4s ease-in-out;
+		 -o-transition: all .4s ease-in-out;
+			transition: all .4s ease-in-out;
+	width: 100%;
+}
+
+.flipboxed .back {
+	height: inherit;
+	position: absolute;
+	top: 0;
+	z-index: 1000;
+	-webkit-transform: rotateY(-180deg);
+	   -moz-transform: rotateY(-180deg);
+	-webkit-transform-style: preserve-3d;
+	   -moz-transform-style: preserve-3d;
+	-webkit-backface-visibility: hidden;
+	   -moz-backface-visibility: hidden;
+	-webkit-transition: all .4s ease-in-out;
+	   -moz-transition: all .4s ease-in-out;
+		-ms-transition: all .4s ease-in-out;
+		 -o-transition: all .4s ease-in-out;
+			transition: all .4s ease-in-out;
+	width: 100%;
+}
+.flipboxed.flip .front {
+	z-index: 900;
+	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+}
+.flipboxed.flip .back {
+	z-index: 1000;
+	-webkit-transform: rotateX(0deg) rotateY(0deg);
+	-moz-transform: rotateX(0deg) rotateY(0deg);
+}

@@ -1,0 +1,86 @@
+
+
+
+/* ==========================================================================
+   F O N T S----------
+   ========================================================================== */
+
+ @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,700,800');
+
+body{
+	font-family: 'Open Sans', sans-serif;
+}
+
+.author-bg-1{background:url(img/4.jpg)};
+
+.testimonial-wrap {
+    position: relative;
+}
+
+h2.testimonial-title {
+    position: absolute;
+    left: 3%;
+    top: 0;
+    font-size: 70px;
+    z-index:  2;
+}
+
+
+
+.author-infor {margin-top: 30px;}
+
+.item-info {
+    line-height: 1.8;
+    font-size: 16px;
+    padding: 180px 0 30px 30px;
+    max-width: 40%;
+}
+
+.author-bg {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 60%;
+    background-size: cover;
+    background-position: center top;
+    background-color: #333;
+}
+
+h2.testimonial-title span {
+    color: #F9870E;
+}
+
+.author-infor i.fa {
+    color: #F88615;
+    font-size: 40px;
+}
+
+.author-infor h4 {
+    font-size: 12px;
+    opacity: .6;
+    letter-spacing: 2px;
+}
+.testimonial-carousel .owl-nav div {
+    display:  inline-block;
+    height: 70px;
+    width: 70px;
+    background: #CB6D15;
+    text-align:  center;
+    font-size: 40px;
+    color: #fff;
+    line-height: 62px;
+}
+
+.testimonial-carousel .owl-nav {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    left: 40%;
+    margin-left: -70px;
+}
+.testimonial-carousel .owl-nav div:first-child {background: khaki;}
+
+.testimonial-carousel .owl-nav div:hover {
+    background: burlywood;
+}

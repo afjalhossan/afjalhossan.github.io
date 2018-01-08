@@ -1,0 +1,102 @@
+
+
+
+/* ==========================================================================
+   F O N T S----------
+   ========================================================================== */
+
+ @import url('https://fonts.googleapis.com/css?family=Scada:400,700|Varela+Round');
+
+body{
+	font-family: 'Scada', sans-serif;
+}
+.styled-bg-1{background: url(img/2.jpg);}
+.styled-bg-2{background: url(img/3.jpg);}
+
+.style-bg-inner {
+    background-size:  cover;
+    background-position: center;
+    background-color: #eee;
+    width: 100%;
+    height: 100%;
+}
+
+.styled-bg {
+    height: 400px;
+    position:  relative;
+    z-index:  1;
+    margin-left: -74px;
+    margin-bottom: 100px;
+}
+
+.styled-bg:after {
+    position:  absolute;
+    left: -30px;
+    top: 30px;
+    content: '';
+    background: #f4f4f4;
+    height: 100%;
+    width: 100%;
+    z-index:  -1;
+}
+
+.styled-bg:before {
+    position: absolute;
+    right: 20%;
+    bottom: -15%;
+    height: 30%;
+    width: 3px;
+    content: '';
+    background: #000;
+}
+
+.right-side .styled-bg {
+    margin-left: 0;
+    margin-right: -74px;
+}
+
+h2.special-section-title {
+    position:  relative;
+    margin-left: -240px;
+    z-index: 2;
+    background: #fff;
+    padding: 20px 30px;
+    font-size: 55px;
+    margin-top: 40px;
+}
+
+body {
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.right-side .h2.special-section-title {
+    margin-left: 0;
+    display:  none;
+}
+
+.right-side h2.special-section-title {
+    margin-left:  0;
+    margin-right: -240px;
+}
+
+.right-side .style-bg-inner {}
+
+a.inline-border-btn {
+    display:  inline-block;
+    color: #333;
+    text-transform: capitalize;
+    font-weight: 700;
+    border-bottom: 2px solid;
+    padding-bottom: 5px;
+}
+
+
+.right-side .styled-bg::after {
+    left: auto;
+    right: -30px;
+}
+.right-side .styled-bg::before {
+    left: 20%;
+    right: auto;
+}

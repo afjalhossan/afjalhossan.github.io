@@ -11,26 +11,32 @@ body{
 	font-family: 'Open Sans', sans-serif;
 }
 
-
-.contact-form form input, textarea {
-    border: 1px solid #ddd;
+.ajax-contact-form input,textarea {
     height: 45px;
-    margin-bottom: 15px;
-    padding: 10px 15px;
     width: 100%;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    padding: 0 15px;
+    text-transform: capitalize;
 }
-.contact-form textarea {
-    height: 200px;
-    margin-bottom: 30px;
+
+.ajax-contact-form textarea {
+    height: 150px;
 }
-.contact-form button {
-    border: 0 none;
-    font-size: 15px;
-    font-weight: 700;
-    letter-spacing: 1.5px;
+button {
     padding: 10px 25px;
-    text-transform: uppercase;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    font-weight: 700;
+    border: none;
 }
-.contact-form h2 {
-    margin-bottom: 50px;
+
+.timeline{
+    width: 80%;
+    margin:50px auto;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style:none;
 }

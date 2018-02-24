@@ -5,27 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Contact form with ajax</title>
-
-    <div class="container">
-        <div class="row">
-            <div class="col-md-offset-3 col-md-6">
-                <div class="contact-form">
-                    <h2 class="text-center">Form With Ajax</h2>
-                    <form id="contact-form" action="mail.php" method="POST">
-                        <input type="text" placeholder="Your Name" name="name">
-                        <input type="email" name="email" placeholder="Your Email">
-                        <input type="nubmber" name="number" placeholder="Your Number">
-                        <input type="text" name="subject" placeholder="Subject">
-                        <textarea name="message" id="msg" cols="30" rows="10" placeholder="Message">
-                            
-                        </textarea>
-                        <button type="button">Send Message</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
+    <title>Circle progress bar</title>
 
 
     <!-- OwlCarousel -->
@@ -44,16 +24,36 @@
   <body>
     
    
-   
+   <div class="container">
+       <div class="row">
+           <div class="col-md-offset-3 com-md-6">
+               <div class="ajax-contact-form">
+                   <h2>Contact For with Ajax</h2>
+                   <form action="mail.php" method="POST" id="contact-form">
+                        <input type="text" name="name" placeholder="your name">
+                        <input type="email" name="email" placeholder="your mail">
+                        <input type="number" name="number" placeholder="your number">
+                        <textarea name="message" id="" cols="30" rows="10" placeholder="message">
+                            
+                        </textarea>
+
+                        <button type="submit">send message</button>
+                       <p class="form-message"></p>
+                   </form>
+               </div>
+           </div>
+       </div>
+   </div>
 
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="js/jquery-2.2.4.min.js"></script>
-      <script src="js/circle-progress.min.js"></script>
     <!--OwlCarousel Js-->
       <script src="js/owl.carousel.min.js"></script>
     <!-- Bootstrap -->
     <script src="js/bootstrap.min.js"></script>
+    <!-- Ajax contact -->
+    <script src="js/form-ajax.js"></script>
     <!-- custom-Js -->
     <script src="js/main.js"></script>
   </body>
